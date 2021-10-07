@@ -518,7 +518,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1810
+.text           0x00000000     0x1816
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -657,99 +657,99 @@ END GROUP
  .text.onewireRead
                 0x00000546       0x58 onewire.o
                 0x00000546                onewireRead
- .text.S7_INIT  0x0000059e       0x52 Segment7.o
+ .text.S7_INIT  0x0000059e       0x7a Segment7.o
                 0x0000059e                S7_INIT
  .text.BUTTON0_GetPinVal
-                0x000005f0       0x30 Button.o
-                0x000005f0                BUTTON0_GetPinVal
+                0x00000618       0x30 Button.o
+                0x00000618                BUTTON0_GetPinVal
  .text.BUTTON1_GetPinVal
-                0x00000620       0x30 Button.o
-                0x00000620                BUTTON1_GetPinVal
+                0x00000648       0x30 Button.o
+                0x00000648                BUTTON1_GetPinVal
  .text.BUTTON2_GetPinVal
-                0x00000650       0x30 Button.o
-                0x00000650                BUTTON2_GetPinVal
+                0x00000678       0x30 Button.o
+                0x00000678                BUTTON2_GetPinVal
  .text.DIO_SetPinDir
-                0x00000680      0x12c DIO.o
-                0x00000680                DIO_SetPinDir
+                0x000006a8      0x12c DIO.o
+                0x000006a8                DIO_SetPinDir
  .text.DIO_SetPinVal
-                0x000007ac      0x15a DIO.o
-                0x000007ac                DIO_SetPinVal
+                0x000007d4      0x15a DIO.o
+                0x000007d4                DIO_SetPinVal
  .text.DIO_TogglePin
-                0x00000906       0xb6 DIO.o
-                0x00000906                DIO_TogglePin
+                0x0000092e       0xb6 DIO.o
+                0x0000092e                DIO_TogglePin
  .text.DIO_GetPinVal
-                0x000009bc       0x9e DIO.o
-                0x000009bc                DIO_GetPinVal
- .text.LED0_ON  0x00000a5a        0xc LED.o
-                0x00000a5a                LED0_ON
+                0x000009e4       0x9e DIO.o
+                0x000009e4                DIO_GetPinVal
+ .text.LED0_ON  0x00000a82        0xc LED.o
+                0x00000a82                LED0_ON
  .text.LED0_OFF
-                0x00000a66        0xc LED.o
-                0x00000a66                LED0_OFF
+                0x00000a8e        0xc LED.o
+                0x00000a8e                LED0_OFF
  .text.LED1_OFF
-                0x00000a72        0xc LED.o
-                0x00000a72                LED1_OFF
- .text.main     0x00000a7e      0x390 main.o
-                0x00000a7e                main
+                0x00000a9a        0xc LED.o
+                0x00000a9a                LED1_OFF
+ .text.main     0x00000aa6      0x380 main.o
+                0x00000aa6                main
  .text.TIMER0_INIT
-                0x00000e0e       0x1a Timer.o
-                0x00000e0e                TIMER0_INIT
+                0x00000e26       0x1a Timer.o
+                0x00000e26                TIMER0_INIT
  .text.TIMER0_Start
-                0x00000e28        0xa Timer.o
-                0x00000e28                TIMER0_Start
+                0x00000e40        0xa Timer.o
+                0x00000e40                TIMER0_Start
  .text.TIMER0_SetDelay
-                0x00000e32      0x19c Timer.o
-                0x00000e32                TIMER0_SetDelay
+                0x00000e4a      0x19c Timer.o
+                0x00000e4a                TIMER0_SetDelay
  .text.__vector_11
-                0x00000fce      0x184 Timer.o
-                0x00000fce                __vector_11
+                0x00000fe6      0x172 Timer.o
+                0x00000fe6                __vector_11
  .text.__vector_10
-                0x00001152       0xb0 Timer.o
-                0x00001152                __vector_10
+                0x00001158       0xb0 Timer.o
+                0x00001158                __vector_10
  .text.__vector_9
-                0x00001202       0xee Timer.o
-                0x00001202                __vector_9
+                0x00001208       0xee Timer.o
+                0x00001208                __vector_9
  .text.__vector_7
-                0x000012f0       0xda Timer.o
-                0x000012f0                __vector_7
+                0x000012f6       0xda Timer.o
+                0x000012f6                __vector_7
  .text.TIMER2_INIT
-                0x000013ca        0xe Timer.o
-                0x000013ca                TIMER2_INIT
+                0x000013d0        0xe Timer.o
+                0x000013d0                TIMER2_INIT
  .text.TIMER2_Start
-                0x000013d8        0x6 Timer.o
-                0x000013d8                TIMER2_Start
+                0x000013de        0x6 Timer.o
+                0x000013de                TIMER2_Start
  .text.TIMER2_Stop
-                0x000013de        0x4 Timer.o
-                0x000013de                TIMER2_Stop
+                0x000013e4        0x4 Timer.o
+                0x000013e4                TIMER2_Stop
  .text.TIMER2_SetDelay
-                0x000013e2      0x19c Timer.o
-                0x000013e2                TIMER2_SetDelay
+                0x000013e8      0x19c Timer.o
+                0x000013e8                TIMER2_SetDelay
  .text.__vector_5
-                0x0000157e      0x116 Timer.o
-                0x0000157e                __vector_5
+                0x00001584      0x116 Timer.o
+                0x00001584                __vector_5
  .text.__vector_4
-                0x00001694       0xb0 Timer.o
-                0x00001694                __vector_4
+                0x0000169a       0xb0 Timer.o
+                0x0000169a                __vector_4
  .text.libgcc.div
-                0x00001744       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                0x00001744                _div
-                0x00001744                __divmodhi4
+                0x0000174a       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x0000174a                _div
+                0x0000174a                __divmodhi4
  .text.libgcc.div
-                0x0000176c       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x0000176c                __udivmodsi4
+                0x00001772       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001772                __udivmodsi4
  .text.libgcc.mul
-                0x000017b0       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
-                0x000017b0                __muluhisi3
+                0x000017b6       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+                0x000017b6                __muluhisi3
  .text.libgcc.div
-                0x000017c6       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x000017c6                __udivmodhi4
+                0x000017cc       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x000017cc                __udivmodhi4
  .text.libgcc.mul
-                0x000017ee       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
-                0x000017ee                __umulhisi3
-                0x0000180c                . = ALIGN (0x2)
+                0x000017f4       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                0x000017f4                __umulhisi3
+                0x00001812                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000180c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x0000180c                _exit
-                0x0000180c                exit
+ .fini9         0x00001812        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00001812                _exit
+                0x00001812                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -768,11 +768,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000180c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00001812        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00001810                _etext = .
+                0x00001816                _etext = .
 
-.data           0x00800060       0x10 load address 0x00001810
+.data           0x00800060       0x10 load address 0x00001816
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -815,23 +815,23 @@ END GROUP
                 0x00800073                Ones
  .bss.Tens      0x00800074        0x1 main.o
                 0x00800074                Tens
- .bss.T2_COMP_count_0.1801
+ .bss.T2_COMP_count_0.1928
                 0x00800075        0x2 Timer.o
- .bss.T2_OVF_count_0.1795
+ .bss.T2_OVF_count_0.1922
                 0x00800077        0x2 Timer.o
- .bss.count_0.1769
+ .bss.count_0.1896
                 0x00800079        0x2 Timer.o
- .bss.count_1.1763
+ .bss.count_1.1890
                 0x0080007b        0x2 Timer.o
- .bss.count_0.1762
+ .bss.count_0.1889
                 0x0080007d        0x2 Timer.o
- .bss.count_0.1735
+ .bss.count_0.1862
                 0x0080007f        0x2 Timer.o
- .bss.count_2.1729
+ .bss.count_2.1856
                 0x00800081        0x2 Timer.o
- .bss.count_1.1728
+ .bss.count_1.1855
                 0x00800083        0x2 Timer.o
- .bss.count_0.1727
+ .bss.count_0.1854
                 0x00800085        0x2 Timer.o
  .bss.T2_OVF_count_1
                 0x00800087        0x2 Timer.o
@@ -845,8 +845,8 @@ END GROUP
                 0x00800099                T2_Init_val
                 0x0080009d                T0_Init_val
                 0x008000a1                PROVIDE (__bss_end, .)
-                0x00001810                __data_load_start = LOADADDR (.data)
-                0x00001820                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00001816                __data_load_start = LOADADDR (.data)
+                0x00001826                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008000a1        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -952,21 +952,21 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x3765
+.debug_info     0x00000000     0x3734
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_info    0x000004e6      0x8f0 ds18b20.o
  .debug_info    0x00000dd6      0x5cd EEPROM.o
  .debug_info    0x000013a3      0x494 I2C.o
  .debug_info    0x00001837      0x610 onewire.o
- .debug_info    0x00001e47      0x340 Segment7.o
- .debug_info    0x00002187      0x293 Button.o
- .debug_info    0x0000241a      0x2a7 DIO.o
- .debug_info    0x000026c1      0x244 LED.o
- .debug_info    0x00002905      0x6e7 main.o
- .debug_info    0x00002fec      0x779 Timer.o
+ .debug_info    0x00001e47      0x3b4 Segment7.o
+ .debug_info    0x000021fb      0x293 Button.o
+ .debug_info    0x0000248e      0x2a7 DIO.o
+ .debug_info    0x00002735      0x244 LED.o
+ .debug_info    0x00002979      0x6b6 main.o
+ .debug_info    0x0000302f      0x705 Timer.o
 
-.debug_abbrev   0x00000000     0x117d
+.debug_abbrev   0x00000000     0x116e
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_abbrev  0x000004a3      0x13d ds18b20.o
@@ -978,21 +978,21 @@ END GROUP
  .debug_abbrev  0x00000c99      0x114 DIO.o
  .debug_abbrev  0x00000dad       0x64 LED.o
  .debug_abbrev  0x00000e11      0x171 main.o
- .debug_abbrev  0x00000f82      0x1fb Timer.o
+ .debug_abbrev  0x00000f82      0x1ec Timer.o
 
-.debug_line     0x00000000     0x1eda
+.debug_line     0x00000000     0x1f13
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_line    0x00000116      0x2c7 ds18b20.o
  .debug_line    0x000003dd      0x2d7 EEPROM.o
  .debug_line    0x000006b4      0x30f I2C.o
  .debug_line    0x000009c3      0x2dd onewire.o
- .debug_line    0x00000ca0      0x1bb Segment7.o
- .debug_line    0x00000e5b      0x19b Button.o
- .debug_line    0x00000ff6      0x3f1 DIO.o
- .debug_line    0x000013e7       0xf7 LED.o
- .debug_line    0x000014de      0x3cc main.o
- .debug_line    0x000018aa      0x630 Timer.o
+ .debug_line    0x00000ca0      0x1d4 Segment7.o
+ .debug_line    0x00000e74      0x19b Button.o
+ .debug_line    0x0000100f      0x3f1 DIO.o
+ .debug_line    0x00001400       0xf7 LED.o
+ .debug_line    0x000014f7      0x3c6 main.o
+ .debug_line    0x000018bd      0x656 Timer.o
 
 .debug_frame    0x00000000      0xa90
  *(.debug_frame)

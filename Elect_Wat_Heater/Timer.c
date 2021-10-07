@@ -7,6 +7,9 @@
 
 #include "Timer.h"
 
+#define F_CPU 16000000
+#include <util/delay.h>
+
 #include <avr/interrupt.h>
 #define Null           (void*)(0)
 
@@ -271,7 +274,12 @@ ISR(TIMER0_OVF_vect)
 				if (counter % 2)
 				{
 					if (S7_Blinker % 2 == 0)
-					{			
+					{
+						/*
+						Here's the simple version of the following two lines,
+						which are used to display the ones & tens of any number
+						on two 7-Segments
+						....... 
 						if (count_1 % 2 == 0)
 						{
 							DIO_SetPinVal(DIO_PORTB, DIO_PIN_2, DIO_PIN_OFF);
@@ -284,6 +292,9 @@ ISR(TIMER0_OVF_vect)
 							PORTA = (Tens << 4) | (PORTA & 0X0F);
 							DIO_SetPinVal(DIO_PORTB, DIO_PIN_2, DIO_PIN_ON);
 						}
+						*/	
+						PORTA = count_1 % 2 == 0 ? (Tens << 4) | (PORTA & 0X0F) : (Ones << 4) | (PORTA & 0X0F);						
+						PORTB = count_1 % 2 == 0 ? 4 | (PORTB & 0XF9) : 2 | (PORTB & 0XF9); 
 					}
 					else
 					{

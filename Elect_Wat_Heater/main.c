@@ -204,9 +204,8 @@ int main(void)
 			//TIMER0_Stop();
 			TIMER2_Stop();
 			
-			// Turn off 7-Segments
- 			DIO_SetPinVal(DIO_PORTB, DIO_PIN_1, DIO_PIN_OFF);
- 			DIO_SetPinVal(DIO_PORTB, DIO_PIN_2, DIO_PIN_OFF);
+			// Turn off 7-Segments / Reinitialize 7-Segments
+ 			S7_INIT();
 			
 			// Turn off LEDs
 			LED0_OFF();
